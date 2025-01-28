@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <!-- * Css Link -->
+    <link rel="stylesheet" href="./style/style.css" />
+    <!-- * Bs Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
+  <body>
+    <div class="layout">
+      <!-- Aside -->
+      <aside>
+        <figure>
+          <img src="./images/no-text-logo.png" />
+          <span>Spotify</span>
+        </figure>
+
+        <nav>
+          <a href="#">
+            <i class="bi bi-house"></i>
+            <span>Anasayfa</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-search"></i>
+            <span>Arama</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-collection"></i>
+            <span>Kütüphaneler</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-music-note-list"></i>
+            <span>Çalma Listeleri</span>
+          </a>
+          <a href="#">
+            <i class="bi bi-heart"></i>
+            <span>Beğenilen Şarkılar</span>
+          </a>
+        </nav>
+      </aside>
+      <!-- Main -->
+      <main>
+        <!-- Header -->
+        <header>
+          <!-- Form -->
+          <form>
+            <input type="search" placeholder="müzik arayınız ..." />
+            <button type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+          <!-- Links -->
+          <nav>
+            <span> Premium</span>
+            <span>Destek</span>
+            <span>Oturum Aç</span>
+          </nav>
+        </header>
+        <!-- Müzik -->
+        <section>
+          <!-- Title -->
+          <h2 id="title">Popüler Müzikler</h2>
+
+          <!-- List -->
+          <div class="list">
+            <!-- Card -->
+            <!-- <div class="card">
+              <figure>
+           
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+       
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+            
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+        
+            <div class="card">
+              <figure>
+ 
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+    
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+   
+            <div class="card">
+              <figure>
+              
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+           
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+          
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+    
+            <div class="card">
+              <figure>
+       
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+         
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+       
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+       
+            <div class="card">
+              <figure>
+           
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+      
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+           
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+           
+            <div class="card">
+              <figure>
+              
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+          
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+          
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div>
+           
+            <div class="card">
+              <figure>
+            
+                <img
+                  src="https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/f7/76/f4/f776f482-406b-301a-4145-14617d0b8cf5/00606949062927.rgb.jpg/400x400cc.jpg"
+                  alt=""
+                />
+              
+                <div class="play">
+                  <i class="bi bi-play-fill"></i>
+                </div>
+              </figure>
+            
+              <div class="card-info">
+                <h4>Mockingbird</h4>
+                <h4>Eminem</h4>
+              </div>
+            </div> -->
+          </div>
+        </section>
+      </main>
+    </div>
+    <div class="player">
+      <!-- Info -->
+      <div class="info">
+        <img
+          src="https://i.scdn.co/image/ab67616d0000b2739b9b36b0e22870b9f542d937"
+          alt=""
+        />
+        <div>
+          <h5>Daft Punk</h5>
+          <p>Veridis Quo</p>
+        </div>
+      </div>
+
+      <!-- Audio -->
+      <audio
+         src="https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/b9/f2/c7/b9f2c7fb-854a-1f7a-b994-764d6d78f1e5/mzaf_11066314483681198504.plus.aac.ep.m4a"
+        controls
+      ></audio>
+
+      <!-- Right -->
+      <div class="icons">
+        <i class="bi bi-music-note-list"></i>
+        <i class="bi bi-boombox"></i>
+        <i class="bi bi-pc-display"></i>
+      </div>
+    </div>
+    <!-- * Js Bağlantı -->
+    <script src="./js/main.js" type="module"></script>
+  </body>
+</html>
